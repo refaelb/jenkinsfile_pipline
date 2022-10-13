@@ -1,25 +1,4 @@
-// // Jenkinsfile (Declarative Pipeline)
-// pipeline {
-//     agent any
 
-//     stages {
-//         stage('Test') {
-            
-//             steps {
-//                 script {
-//                     if (env.BRANCH_NAME.startsWith('PR')) {
-//                         sh 'python3 main.py'
-//                         sh 'echo hihihihihihihihihi'
-//                     } else {
-//                     // some other branch
-//                     } 
-//                 }
-//                 // echo 'Testing..'
-//                 // sh 'python3 main.py'
-//             }
-//         }
-//     }
-// }
 
 node {
     stage("Prepare") {
